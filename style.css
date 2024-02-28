@@ -16,8 +16,14 @@ main {
   color: #f8f9fa;
 }
 
-h5 {
+h5,
+h4 {
   color: #2c6e49;
+}
+
+h5,
+p {
+  margin: 0.1rem;
 }
 
 div {
@@ -32,4 +38,10 @@ div span {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+#link {
+  font-style: italic;
+  font-weight: 500;
+  color: #193803d7;
 }
