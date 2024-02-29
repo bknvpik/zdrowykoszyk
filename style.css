@@ -1,47 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sen:wght@400;500;600;700&display=swap");
+
 body {
   margin: 0;
   height: 100vh;
+  background-color: #fffaed;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: #231f20;
+}
+
+#logo {
+  height: 80%;
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+#horizontal-bar {
+  width: 100%;
+  height: 20%;
+  background-color: #f4c236;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 100%;
+  max-height: 100%;
 }
 
 main {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4d03f;
-  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f8f9fa;
-}
-
-h5,
-h4 {
-  color: #2c6e49;
-}
-
-h5,
-p {
-  margin: 0.1rem;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-div span {
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
 }
 
 #link {
   font-style: italic;
   font-weight: 500;
   color: #193803d7;
+}
+
+footer {
+  height: 20%;
+  box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.1);
+  background-color: #231f20;
+  color: #fffaed;
+  display: flex;
+}
+
+#left-footer,
+#right-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+#left-footer {
+  align-items: flex-start;
+}
+
+#right-footer {
+  align-items: flex-end;
+}
+
+footer h2 {
+  color: #8cc63f;
+}
+
+footer p {
+  margin: 0.2rem;
+  font-weight: 300;
+}
+
+footer a {
+  all: unset;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #8cc63f;
+}
+
+.text-heavy {
+  font-weight: 600;
 }
