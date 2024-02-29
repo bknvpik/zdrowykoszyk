@@ -98,3 +98,22 @@ footer a:hover {
 .text-heavy {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 500px) {
+  #logo {
+    align-self: center;
+  }
+
+  main {
+    height: 30%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  footer {
+    height: 50%;
+    flex-direction: column;
+  }
+}
